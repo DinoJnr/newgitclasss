@@ -1,0 +1,17 @@
+body{
+    background-color: cadetblue;
+}
+button{
+    background-color: crimson;
+    border-radius: 30px;
+    color: cyan;
+    outline: none;
+}
+input{
+    background-color: coral;
+    border-radius: 30px;
+    outline: none;
+}
+h1{
+    color:     darkgoldenrod;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="eventassign.css">
+    
+</head>
+<body style="background-color: coral;">
+    <h1>TIC TAC TOE</h1>
+    <button id="lauche" onclick="lauch()">Lauch</button>
+    <div id="display"></div>
+    <input id="first" type="text" placeholder="First Player">
+    <br>
+    <input id="second" type="text" placeholder="Second Player">
+    <br><br>
+    <input type="button" value="Submit" onclick="sumbit()" id="sub">
+    <input id="starte" onclick="start()" type="button" value="Start">
+    <input id="con" onclick="cont()" type="button" value="Continue">
+    <input id="restarte" onclick="Restart()" type="button" value="Restart">
+    <input id="stope" onclick="Stop()" type="button" value="End Game">
+    <table id="table1" border="2" width="180px" style="position: absolute; top: 150px; left: 10px;">
+        <tr><td>Score Board</td></tr>
+        <tr>
+            <td>
+                <div id="cho"></div>
+                <input type="text" id="score1">
+                <div id="who"></div>
+                <input type="text" id="score2">
+               
+            </td>
+        </tr>
+
+    </table>
+    <div id="total" ></div>
+      
+    <center>
+        <table id="table2" border="2" width="150" height="170" style="background-color: fuchsia;position: absolute; top: 300px; left: 500px;">
+            <tr>
+                <td width="50px" align="center" height="50px"> <input id="one" type="button" value="" onclick="myfunc (event),pon()"> </td>
+                <td width="50px" align="center" height="50px"> <input id="two" type="button" value=""  onclick="myfunc(event), pon()"></td>
+                <td width="50px" align="center" height="50px"> <input id="three" type="button" value="" onclick="myfunc(event), pon()"></td>
+            </tr>
+            <tr>
+                <td width="50px" align="center" height="50px"> <input id="four" type="button" value="" onclick="myfunc(event),pon()"> </td>
+                <td width="50px" align="center" height="50px"> <input id="five" type="button" value="" onclick="myfunc(event),pon()"></td>
+                <td width="50px" align="center" height="50px"> <input id="six" type="button" value=""onclick="myfunc(event),pon()"></td>
+            </tr>
+            <tr>
+                <td width="50px" align="center" height="50px"> <input id="seven" type="button" value="" onclick="myfunc(event),pon()"></td>
+                <td width="50px" align="center" height="50px">  <input id="eight" type="button" value=""onclick="myfunc(event),pon()"></td>
+                <td width="50px" align="center" height="50px">  <input id="nine" type="button" value=""onclick="myfunc(event),pon()"></td>
+            </tr>
+        </table>
+
+
+        <div id="qtn">ARE YOU SURE YOU WANT TO QUIT?</div>
+        <button id="qtn1" onclick="no()">NO</button>
+        <button id="qtn2" onclick="yes()">YES</button>
+        <!-- <div id="vic"></div> -->
+    </center>
+    <script>
+        var mix=0
+        function myfunc(e){
+           
+            if(e.target.value=="" && mix==0){
+                e.target.value="x"
+                mix=1
+            }
+            else if(e.target.value="0" && mix==1){
+                e.target.value="o"
+                mix="0"
+            }   
+        }
+        function lauch(){
+            first.style.display="block"
+            second.style.display ="block"
+            sub.style.display="block"
+            lauche.style.display="none"
+            total.style.display="none"
+        }
+        function sumbit(){
+            if(first.value=="" && second.value==""){
+                display.style.display="block"
+                display.innerHTML="Please insert your name"  
+            }
+            else{
+            starte.style.display ="block"
+            first.style.display="none"
+            second.style.display ="none"
+            sub.style.display="none"
+            lauche.style.display="none"
+            display.style.display="none"
+            total.style.display="none"
+            
+        }
+        }
+        function start(){
+            table1.style.display="block"
+            starte.style.display ="none"
+            table2.style.display = "block"
+            display.style.display="none"
+            cho.style.display="block"
+            who.style.display="block"
+            cho.innerHTML=first.value
+            who.innerHTML=second.value
+            con.style.display="block"
+            restarte.style.display="block"
+            stope.style.display="block"  
+            total.style.display="block"
+        }
+        function Restart(){
+            one.value=""
+            two.value=""
+            three.value=""
+            four.value=""
+            five.value=""
+            six.value=""
+            seven.value=""
+            eight.value=""
+            nine.value=""
+            score1.value=""
+            score2.value=""
+        }
+        function cont(){
+            one.value=""
+            two.value=""
+            three.value=""
+            four.value=""
+            five.value=""
+            six.value=""
+            seven.value=""
+            eight.value=""
+            nine.value=""
+            one.disabled=false;
+            two.disabled=false;
+            three.disabled=false;
+            four.disabled=false;
+            five.disabled=false;
+            six.disabled=false;
+            seven.disabled=false;
+            eight.disabled=false;
+            nine.disabled=false;
+        }
+        function Stop(){
+            qtn.style.display="block"
+            qtn1.style.display="block"
+            qtn2.style.display="block"
+            table1.style.display="none"
+            starte.style.display ="none"
+            table2.style.display = "none"
+            display.style.display="none"
+            cho.style.display="none"
+            who.style.display="none"
+            stope.style.display="none"
+            con.style.display="none"
+            restarte.style.display="none"
+            total.style.display="none"
+        }
+        function yes(){
+            lauche.style.display="block"
+            qtn.style.display="none"
+            qtn1.style.display="none"
+            qtn2.style.display="none"
+            stope.style.display="none"
+            first.value=""
+            second.value=""
+        }
+        function no(){
+            table1.style.display="block"
+            table2.style.display = "block"
+            display.style.display="none"
+            cho.style.display="block"
+            who.style.display="block"
+            con.style.display="block"
+            restarte.style.display="block"
+            qtn.style.display="none"
+            qtn1.style.display="none"
+            qtn2.style.display="none"
+            stope.style.display="block"
+
+        }
+        function pon(){ 
+           if( one.value =='x' && two.value=='x' && three.value =='x'){
+               total.style.display="block";
+               total.innerHTML="player x won"
+           }
+            else if(four.value == 'x' && five.value== 'x' && six.value== 'x'){
+                total.style.display="block";
+                total.innerHTML="player x has won";
+            }
+            // if (one.innerHTML, two.innerHTML, three.innerHTML){
+            //     total.style.display="block"
+            //     total.innerHTML=" player x has won"
+
+            // }
+        }
+    </script>
+</body>
+</html>

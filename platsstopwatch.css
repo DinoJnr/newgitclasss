@@ -1,0 +1,90 @@
+#one{
+    width: 600px;
+    height:300px;
+    background-color: coral;
+    border: 12px solid chocolate;
+    border-bottom-right-radius: 100px ;
+    border-top-left-radius: 100px;
+}
+h1{
+    position: absolute;
+    left: 200px;
+    color: rgb(163, 212, 89);
+}
+#hrs{
+    position: absolute;
+    top: 100px;
+    width: 100px;
+    height: 60px;
+    background-color: hotpink;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px ;
+    left: 100px;
+    color: white;
+    font-size: 20px;
+    
+}
+#mins{
+    position: absolute;
+    top: 100px;
+    width: 100px;
+    height: 60px;
+    background-color: hotpink;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px ;
+    left: 250px;
+    color: white;
+    font-size: 20px;
+
+}
+#secs{
+    position: absolute;
+    top: 100px;
+    width: 100px;
+    height: 60px;
+    background-color: hotpink;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px ;
+    left: 400px;
+    color: white;
+    font-size: 20px;
+}
+#but{
+    position: absolute;
+    top: 230px;
+    background-color: yellow;
+    width: 120px;
+    height: 50px;
+    font-size: 25px;
+    color: deeppink;
+    left: 100px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px ;
+
+}
+#butt{
+    position: absolute;
+    top: 230px;
+    background-color: yellow;
+    width: 120px;
+    height: 50px;
+    font-size: 25px;
+    color: deeppink;
+    left: 250px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px ;
+
+}
+#button{
+    position: absolute;
+    top: 230px;
+    background-color: yellow;
+    width: 120px;
+    height: 50px;
+    font-size: 25px;
+    color: deeppink;
+    left: 400px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px ;
+
+}

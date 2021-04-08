@@ -1,0 +1,10 @@
+#two{
+    height: 300px;
+    width: 280px;
+    position: absolute;
+    top: 600px;
+    left: 200px;
+    border: 6px solid black;
+    background-color:gainsboro;
+    border-radius: 30px;
+}

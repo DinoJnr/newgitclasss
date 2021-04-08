@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stopwatch.css">
+    
+    
+</head>
+<body>
+    <center>
+    <div id="one">
+        <h1>TIMER/STOPWATCH</h1>
+        <input type="text" placeholder="00" id="hrs">
+        <input type="text" placeholder="00" id="mins">
+        <input type="text" placeholder="00" id="sec">
+        <h2>Timer</h2>
+        <button onclick="countDown()" id="but">START</button>
+        <button onclick="count()" id="butt">RESET</button>
+        <button onclick="" id="button">STOP</button>
+        <h3>STOPWATCH</h3>
+        <button onclick="shoutOut()" id="button1">START</button>
+        <button onclick="Out()" id="button2">RESET</button>
+        <button id="button3">STOP</button>
+    </div>
+      <audio src="music/toto.m4a" id="music"></audio>
+    <script>
+        
+        var seconds;
+        var minutues;
+        var hours;
+
+    
+        function countDown(){
+            seconds=sec.value;
+            seconds --;
+            sec.value = seconds;
+            if(seconds > 0){
+            setTimeout(countDown,1000);
+            }
+            else{
+                minutues=mins.value;
+                if(minutues > 0){
+                    minutues --;
+                    mins.value = minutues;
+                    seconds = 59;
+                    seconds --;
+                    sec.value = seconds;
+                    setTimeout(countDown, 1000)
+                }
+                else{
+                    hours=hrs.value;
+                    if( hours > 0){
+                        hours --;
+                        hrs.value = hours;
+                        minutues = 60;
+                        minutues --;
+                        mins.value = minutues
+                        seconds = 59;
+                        seconds --;
+                        sec.value = seconds;
+                        setTimeout(countDown, 1000)
+                    }
+            }    
+            }
+        }
+        function count(){
+            sec.value = 01;
+            mins.value = 00;
+            hrs.value = 00;
+        }
+        
+        function shoutOut(){
+            seconds=sec.value;
+            seconds ++;
+            sec.value = seconds;
+            if(seconds < 59){
+            setTimeout(shoutOut,1000);
+            }
+            else{
+                minutues=mins.value;
+                if(minutues < 59){
+                    minutues ++;
+                    mins.value = minutues;
+                    seconds = 00;
+                    seconds ++;
+                    sec.value = seconds;
+                    setTimeout(shoutOut, 1000)
+                }
+                else{
+                    hours=hrs.value;
+                    if( hours < 59){
+                        hours ++;
+                        hrs.value = hours;
+                        minutues = 00;
+                        minutues ++;
+                        mins.value = minutues
+                        seconds = 00;
+                        seconds ++;
+                        sec.value = seconds;
+                        setTimeout(shoutOut, 1000)
+                    }
+            }    
+            }
+        }
+        </script>
+        </center>
+</body>
+</html>

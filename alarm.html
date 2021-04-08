@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="alarm.css">
+</head>
+<body bgcolor="deepink"><center>
+    <div id="rem">
+    </div>
+    <input type="number" id="hour">
+    <input type="number" id="minute">
+    <input type="number" id="second">
+   <br><br>
+    <button id="star" onclick="start()">SET ALARM</button>
+    <button id="se" onclick="Stop()">STOP</button>
+    <button id="sto" onclick="freeze()">SNOOZE</button>
+    <audio src="music/Champ.mp3" id="music"></audio>
+    <div id="dem"></div>
+</center>
+
+<script>
+    function time(){
+            anything = new Date();
+            a=anything.getHours();
+            b=anything.getMinutes();
+            c=anything.getSeconds();
+            rem.innerHTML=a +':'+ b + ':'+ c;
+            setTimeout(time, 1000);
+        }
+    time();
+    function start(){
+        anything = new Date();
+           
+           a=anything.getHours();
+           b=anything.getMinutes();
+           c=anything.getSeconds();
+        if(hour.value == anything.getHours() && minute.value == anything.getMinutes() && second.value == anything.getSeconds())            
+        {
+            music.play();   
+        }
+        setInterval(start , 1000)
+    }
+</script>
+</body>
+</html>

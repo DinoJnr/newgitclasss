@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!DOCTYPE html>
+
+<!-- Copyright (c) 2002-2017 TimeMe.  All Rights Reserved.  Sep 27 2017 20:37  202206-2014.02.23  split-lap-timer.htm -->
+
+ <html> <head> <title>Split Lap Timer</title> <meta name="title" content="Split Lap Timer"> <meta name="description" content="FREE Split Lap Timer lets online users record time splits / intervals while counting, with or without sound, and in various display colors, sizes and fonts.">
+ <meta name="keywords" content="split lap timer,split timer,lap timer,split,lap,timer,free,online,interval,timeme"> <meta charset="UTF-8"> <meta name="robots" content="index,follow"> <meta name="googlebot" content="index,follow">
+ <bgsound src="#" id="gWm" autostart="false"> <link rel="stylesheet" type="text/css" href="https://www.timeme.com/z-styles-new.css"> <script type="text/javascript" src="https://www.timeme.com/js/1.9.1.jquery.min.js"></script>
+ </head> <body onkeypress="return G3(event)"> <div id="modal-mask"></div> <div style="width: 100%; text-align: center;"> <div style="width: 90%; margin: 0 auto 0 auto;"> <script type="text/javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+ <div style="width: 728px; margin: 30px auto 30px auto;"> <ins class="adsbygoogle" style="display: inline-block; width: 728px; height: 90px;" data-ad-client="ca-pub-4341063430626762" data-ad-slot="9244268736"></ins>
+ <script type="text/javascript">(adsbygoogle=window.adsbygoogle||[]).push({});</script> </div> <div style="width: 100%; text-align: center; margin: 20px 0 40px 0;"> <div style="display: inline-block; max-width: 690px;">
+ <div style="text-align: left; float: left; width: 111px; height: 31px; margin: 8px 13px 10px 0;"> <a title="TimeMe Home Page" href="https://www.timeme.com/"><img alt="TimeMe Home Page" title="TimeMe Home Page" name="eAt" src="https://www.timeme.com/images/logo.jpg" style="border: 0; width: 111px; height: 31px;"></a>
+ </div> <p class="text center lh25 bold nomargin"> <a class="ctrlnk" title="Timer" href="https://www.timeme.com/timer.htm">Timer</a> <a class="ctrlnk" title="Stopwatch" href="https://www.timeme.com/stopwatch.htm">Stopwatch</a>
+ <a class="ctrlnk nowrap" title="Countdown Timer" href="https://www.timeme.com/countdown-timer.htm">Countdown Timer</a> <a class="ctrlnk nowrap" title="Count Up Timer" href="https://www.timeme.com/count-up-timer.htm">Count Up Timer</a>
+ <a class="ctrlnk nowrap" title="Split Lap Timer" href="https://www.timeme.com/split-lap-timer.htm">Split Lap Timer</a> <a class="ctrlnk nowrap" title="Alarm Clock" href="https://www.timeme.com/alarm-clock.htm">Alarm Clock</a>
+ <a class="ctrlnk nowrap" title="Chess Timer" href="https://www.timeme.com/chess-timer.htm">Chess Timer</a> <a class="ctrlnk nowrap" title="All Timer Stopwatch Products" href="https://www.timeme.com/timer-stopwatch-products.htm">All Products</a>
+ <a class="ctrlnk" title="Contact Us" href="https://www.timeme.com/information/contact.htm">Contact</a> <a class="ctrlnk nowrap" title="TimeMe Site Map" href="https://www.timeme.com/information/site-map.htm">Site Map</a>
+ </p> </div> </div> <div style="clear: both;"></div> </div> <h1 class="heading-page" id="vJx">Split Lap Timer</h1> <p id="kJw" class="text center thin" style="display: inline-block; max-width: 520px;">&nbsp;<br>
+ FREE <i>Split Lap Timer</i> can record time splits / intervals, with or without sound, and in various colors, sizes and fonts.&nbsp; Best <i>Split Lap Timer</i>, in our opinion :-)<span class="text-moderate">&nbsp;&nbsp; <a title="Split Lap Timer Features" href="https://www.timeme.com/split-lap-timer-help.htm">Features</a></span><br>
+ <span style="font-size: 11px; letter-spacing: 1px;"><a href="https://www.timeme.com/details/split-lap-timer-download.htm">Download Version Available</a></span> </p> <div style="width: 90%; margin: 0 auto 0 auto;">
+ <div id="mTs">&nbsp;</div> <div style="width: 454px; margin: 0 auto 0 auto; position: relative; top: -5px;"> <div style="width: 55px; float: left; margin: 12px 0 0 22px;"> <p class="text left bold"><a title="Timer Help" target="_blank" href="https://www.timeme.com/split-lap-timer-help.htm">Help</a></p>
+ </div> <div style="width: 100px; float: left;"> <span id="vCr"></span><img class="timer-button" alt="Start/Stop Timer" title="Start/Stop Timer" name="pRg" src="https://www.timeme.com/images/button-start.jpg" onmousedown="javascript:U4()">
+ </div> <div style="width: 100px; float: left;"> <span id="qWq"></span><img class="timer-button" alt="Split Timer" title="Split Timer" name="iGf" src="https://www.timeme.com/images/button-split.jpg" onmousedown="javascript:K0()">
+ </div> <div style="width: 100px; float: left;"> <span id="iSp"></span><img class="timer-button" alt="Reset Timer" title="Reset Timer" name="rAe" src="https://www.timeme.com/images/button-reset.jpg" onmousedown="javascript:J3()">
+ </div> <div style="width: 77px; float: left; margin: 12px 0 0 0;"> <p class="text right bold"><span id="aFw"><a class="nooutline" title="Show/Hide Timer Settings" href="javascript:F6()">Settings</a></span></p>
+ </div> </div> <div style="clear: both;"></div> <form name="zBk" method="post"> <div id="settings-area" style="display: none;"> <div style="overflow: hidden;"> <div style="float: left;"><p class="text bold gray" style="margin: 0 0 7px 0;">Settings</p></div>
+ <div style="float: right"> <img class="x-close" title="Hide Settings" alt="Hide" src="https://www.timeme.com/images/close-x-gray.jpg" style="cursor: pointer; position: relative; left: 7px;">
+ </div> <div style="float: right"> <p class="text nomargin"><a class="bold mr20" target="_blank" href="https://www.timeme.com/split-lap-timer-help.htm#help-settings">Help</a></p> </div> <div style="clear: both;"></div>
+ <div style="text-align: center;"> <div class="settings-choice"> <p class="text gray bold center nomargin"> <span class="settings-heading">Options <a target="_blank" href="https://www.timeme.com/split-lap-timer-help.htm#help-options" title="Options Help"><img class="settings-question" src="https://www.timeme.com/images/question.gif"></a></span></p>
+ <p class="text nowrap nomargin" style="line-height: 28px;"> <label><input type="checkbox" value="yes" name="bBt" onclick="R5()"> <span class="up2">Clear on Reset</span></label> <label><input type="checkbox" value="yes" name="iQg" onclick="F1()">
+ <span class="up2">Start on Reset</span></label></p> </div> <div class="settings-choice"> <p class="text gray bold center nomargin"> <span class="settings-heading">Keyboard Controls <a target="_blank" href="https://www.timeme.com/split-lap-timer-help.htm#help-keyboard" title="Keyboard Controls Help"><img class="settings-question" src="https://www.timeme.com/images/question.gif"></a></span></p>
+ <p class="text nowrap nomargin" style="line-height: 25px;"> Start/Stop&nbsp;<span class="up1"><input class="text-form-field" type="text" name="iCc" style="width: 32px; padding: 1px 3px 1px 3px; text-align: center" onblur="C2(this,'Start Stop')" onkeypress="return T9(event,'Start Stop')"></span>&nbsp;&nbsp;
+ Split&nbsp;<span class="up1"><input class="text-form-field" type="text" name="mMb" style="width: 32px; padding: 1px 3px 1px 3px; text-align: center" onblur="C2(this,'Split')" onkeypress="return T9(event,'Split')"></span>&nbsp;&nbsp;
+ Reset&nbsp;<span class="up1"><input class="text-form-field" type="text" name="yEa" style="width: 32px; padding: 1px 3px 1px 3px; text-align: center" onblur="C2(this,'Reset')" onkeypress="return T9(event,'Reset')"></span>
+ <label class="dn1 ml13"><input type="checkbox" value="yes" name="wJd" onclick="W9()"> <span class="up1">Show Keys</span></label></p> </div> <div style="clear: both;"></div> <div class="settings-choice">
+ <p class="text gray bold center nomargin"> <span class="settings-heading">Timer Display <a target="_blank" href="https://www.timeme.com/split-lap-timer-help.htm#help-display" title="Timer Display Help"><img class="settings-question" src="https://www.timeme.com/images/question.gif"></a></span></p>
+ <p class="text nowrap nomargin up1"> <select name="mQx" class="text-form-field" style="width: 92px;" onchange="N4()" title="Minimum Width of Display"> <option value="0">0</option> <option value="2">00</option>
+ <option value="3">0:00</option> <option value="4">00:00</option> <option value="5">0:00:00</option> <option value="6">00:00:00</option> <option value="7">0 (secs)</option> </select> <label class="dn3"><input type="checkbox" value="no" name="rBu" onclick="P9()">
+ <span class="up1">Bold</span></label> <label class="dn3"><input type="checkbox" value="yes" name="vEy" onclick="E7()"> <span class="up1">Shadow</span></label> </p> </div> <div class="settings-choice">
+ <p class="text gray bold center nomargin"> <span class="settings-heading">Timer Text <a target="_blank" href="https://www.timeme.com/split-lap-timer-help.htm#help-text" title="Timer Text Help"><img class="settings-question" src="https://www.timeme.com/images/question.gif"></a></span></p>
+ <p class="text nowrap nomargin dn2"> <select name="eXv" class="text-form-field" style="width: 120px;" onchange="Z4()"> </select> <select name="nGz" class="text-form-field" style="width: 82px;" title="Size of Display" onchange="J1()"> </select>
+ <select name="iHw" class="text-form-field" style="width: 155px;" title="Display Font" onchange="V1()"> </select> </p> </div> <div style="clear: both;"></div> <div class="settings-choice">
+ <p class="text gray bold center nomargin"> <span class="settings-heading">Title <a target="_blank" href="https://www.timeme.com/split-lap-timer-help.htm#help-title" title="Title Help"><img class="settings-question" src="https://www.timeme.com/images/question.gif"></a></span></p>
+ <p class="text nowrap nomargin"> <input class="text-form-field" type="text" name="sUj" style="width: 170px; padding: 1px 3px 1px 3px;" onblur="F9()" onkeypress="return T9(event,'Title')">
+ <label><input type="checkbox" value="no" name="zCh" style="position: relative; top: 3px;" onclick="H2()"> <span class="dn1">No Tag</span></label></p> </div> <div class="settings-choice">
+ <p class="text gray bold center nomargin"> <span class="settings-heading">Sound <a target="_blank" href="https://www.timeme.com/split-lap-timer-help.htm#help-sound" title="Sound Help"><img class="settings-question" src="https://www.timeme.com/images/question.gif"></a>
+ <a target="_blank" title="Review All Sounds" class="thin text-moderate up1" style="color: #0033cc;" href="https://www.timeme.com/split-lap-timer-sounds.htm">Review Sounds</a></span></p>
+ <p class="text nowrap nomargin dn2"> <select class="text-form-field" name="yKf" style="width: 150px;" onchange="V0()"></select> <span class="dn2">&nbsp;<a href="javascript:I5()" title="Play Sound" name="iVy" style="outline: 0;">Try</a>
+ &nbsp;<a href="javascript:D0()" title="Stop Sound" name="pNf" style="outline: 0;">Stop</a> </span></p> </div> </div> <div style="clear: both; width: 100%; height: 20px; padding: 5px 0 0 0;">
+ <div style="float: right; margin: 0 0 0 20px;"> <p class="text nomargin"> <a href="javascript:G7()" title="Reset Timer to Default Settings">Default Settings</a> </p> </div> </div> </div>
+ <p class="nomargin text-fine" style="line-height: 2px;"><a id="aJu" style="outline: 0;" href="#"><img style="border: 0; width: 2px; height: 2px;" src="https://www.timeme.com/images/dot.gif"></a></p>
+ </div> <div id="time-data-area" style="margin: 0 auto 0 auto; width: 307px;"> <div class="center"> <span style="display: inline-block; width: 60px;"> &nbsp; </span><span style="display: inline-block; width: 180px;" class="text-heading">
+ &nbsp;<br>Time Data </span><span style="display: inline-block; width: 60px;" class="text bold"> &nbsp;<a href="javascript:A1(1)">Clear</a> </span> </div> <p class="text center" style="margin: 10px 0 0 0;">
+ <textarea class="text-form-field" style="width: 300px; height: 400px; padding: 2px 2px 2px 3px; font-weight: bold;" rows="1" name="eJi" cols="1"></textarea><br> Show&nbsp; <input onclick="G8()" type="radio" value="1"    name="xAe">1's&nbsp;
+ <input onclick="G8()" type="radio" value="10"   name="xAe">.1's&nbsp; <input onclick="G8()" type="radio" value="100"  name="xAe">.01's&nbsp; <input onclick="G8()" type="radio" value="1000" name="xAe">.001's<br>
+ Time Format&nbsp; <input onclick="Y9()" type="radio" value="minutes" name="field_format">1:35&nbsp; <input onclick="Y9()" type="radio" value="decimal" name="field_format">95 </p> </div>
+ </form> </div> <div style="width: 90%; margin: 0 auto 0 auto;"> <p class="text center">&nbsp;</p> <div style="width: 728px; margin: 20px auto 0 auto;"> <ins class="adsbygoogle" style="display: inline-block; width: 728px; height: 90px;"
+ data-ad-client="ca-pub-4341063430626762" data-ad-slot="0758511248"></ins> <script type="text/javascript">(adsbygoogle=window.adsbygoogle||[]).push({});</script> </div> <p class="text center gray bold lh25" style="margin-right: auto; margin-left: auto; max-width: 700px;">
+ &nbsp;<br> <a class="ctrlnk" title="Timer" href="https://www.timeme.com/timer.htm">Timer</a> <a class="ctrlnk" title="Stopwatch" href="https://www.timeme.com/stopwatch.htm">Stopwatch</a>
+ <a class="ctrlnk" title="Countdown Timer" href="https://www.timeme.com/countdown-timer.htm">Countdown Timer</a> <a class="ctrlnk" title="Count Up Timer" href="https://www.timeme.com/count-up-timer.htm">Count Up Timer</a>
+ <a class="ctrlnk" title="Split Lap Timer" href="https://www.timeme.com/split-lap-timer.htm">Split Lap Timer</a> <a class="ctrlnk" title="Alarm Clock" href="https://www.timeme.com/alarm-clock.htm">Alarm Clock</a>
+ <a class="ctrlnk" title="Chess Timer" href="https://www.timeme.com/chess-timer.htm">Chess Timer</a> <a class="ctrlnk" title="All Timer Stopwatch Products" href="https://www.timeme.com/timer-stopwatch-products.htm">All Products</a>
+ <a class="ctrlnk" title="Terms of Use" href="https://www.timeme.com/information/terms-of-use.htm">Terms</a> <a class="ctrlnk" title="Privacy Policy" href="https://www.timeme.com/information/privacy-policy.htm">Privacy</a>
+ <a class="ctrlnk" title="About Us" href="https://www.timeme.com/information/about.htm">About</a> <a class="ctrlnk" title="Contact Us" href="https://www.timeme.com/information/contact.htm">Contact</a>
+ <a class="ctrlnk" title="TimeMe Site Map" href="https://www.timeme.com/information/site-map.htm">Site Map</a> <br> </p> <p class="text center gray lh20"> <a class="gray" title="TimeMe Home Page" href="https://www.timeme.com/">TimeMe</a>
+ <a class="gray ml25" title="Legal Information" href="https://www.timeme.com/information/legal.htm">Copyright &copy; 2017 TimeMe. All Rights Reserved</a>. <script type="text/javascript">document.write('<a class="gray ml25" title="Email Us" href="m'+'ra'.charAt(1)+'ilto:co'+'ntact@tim'+'ea'.charAt(0)+'me.com">cont'+'act@time'+'rm'.charAt(1)+'e.com</a>')</script>
+ <br> </p> </div> </div> <p class="count"> <img alt="count" src="https://www.timeme.com/counts.cgi?id=tmslt"> <img alt="start" src="https://www.timeme.com/images/button-start.jpg"> <img alt="stop"  src="https://www.timeme.com/images/button-stop.jpg">
+ <img alt="split" src="https://www.timeme.com/images/button-split.jpg"> <img alt="reset" src="https://www.timeme.com/images/button-reset.jpg"> <span id="eZz">&nbsp;</span> </p> <script type="text/javascript">
+ var timer_type='splitlap';var zKh='no';var yIe='stop';var uJj='^';var ySh='';var cQx=new Array();var aWq='';var zZd='';var gNr='';var bTf='';var aCn='';var aMz='';var xQa='';var qTt='';var nXp='';var dVc='';
+ var zQk='';var sMm='';var pQj='';var kUk='';var hYi='';var yDj='';var iEh='';var nIi='';var bCe='';var bSb='';var tZc='';var rXz='';var wUg='';var nHd='';var kId='';var gMa='';var vIb='';var pIy='';
+ var hNf='';var uPc='';var vGu='';var dQm='';var iTs='';var wFg='';var tDt='';var kRk='';var gPm='';var eBy='';var setting_data_format='';var timer_data_format='';var wKw=0;var tYx=0;var uAv=0;
+ var bQg=0;var rZr=0;var pGq=0;var pTn=0;var iMp=0;var sSt=new Date();var dAe='';var aSf='';var fGi=0;var cWu='';var tVj='';var kYb=0;var xKv='';var tXw='';var xEa='';var timer_settings_showing=0;
+ var jMj=new Array();var pWk=0;var uXn='';var qMm='';var kHp=0;var wWq=0;var zYs=0;var xBt='';var vNy='';var dJs='';var xCu='';var uBx='';var dWv='';var kGp='';var wMr='';var yTa='';var jKq='';
+ var wHt=0;var vWw=0;var hZz=0;var nJx=0;var jCv=0;var kBb=0;var xWu=0;var eYy=0;var cTr=0;var fXs=0;var i=0;var j=0;var qDh=new Array('Off','off','---------------','divider','Beep','beep',
+ 'Buzz','buzz','Chop','chop','Clink','clink','Gun Shot','gun-shot','Keyboard','keyboard','Laughter','laughter','Pipe Hit','pipe','Raspberry','raspberry','Sci-Fi','sci-fi','Sweep','sweep',
+ 'Three Notes','three-notes','Watch Beep','watch');var wSi=Math.floor(qDh.length/2);var iRk=new Array('Green','4d9e73','Blue','0d9ad0','Red','f70606','Gray','a0a0a0','Black','000000','Brown','996600',
+ 'Navy Blue','003399','Orange','ff9933','Sea Green','009999','Tan','d2b48c','Teal','008080','Violet','cc00cc','Yellow','f3f103','Yellow Green','9acd32');var xNm=Math.floor(iRk.length/2);var eFq=new Array('50','100','150','200','250','300','350','400','450','500','550','600','650','700','750','800','850','900','950');
+ var qHr=eFq.length;var vFn=new Array('Arial','arial,sans-serif','Arial Black','arial black,gaget,sans-serif','Arial Narrow','arial narrow,sans-serif','Comic Sans','comic sans ms,cursive',
+ 'Courier','courier new,courier,monospace','Lucida Console','lucida console,monaco,monospace','Lucida Sans','lucida sans unicode,lucida grande,sans-serif','Palatino','palatino linotype,book antiqua,palatino,serif',
+ 'Times New Roman','times new roman,times,serif','Trebuchet','trebuchet ms,helevetica,sans-serif','Verdana','verdana,geneva,sans-serif','-----apple-----','divider','Felt Marker','marker felt,sans-serif',
+ 'Herculanum','herculanum,sans-serif','Krungthep','krungthep,sans-serif');var mZp=Math.floor(vFn.length/2);var digit_mins=new Array('','0','00','0:00','00:00','0:00:00','00:00:00','0(secs)');
+ var digit_mins_count=digit_mins.length;var uNh=navigator.appName;var iZi=navigator.appVersion;var qRj=parseFloat(iZi);var nAg=navigator.userAgent.match(/(iPad|iPhone|iPod)/g);var audio_object=null;
+ var dBb='';var mHc=0;var gUe=null;function E4(){ySh=kJw.innerHTML;B7();zZd=aWq;bTf=gNr;aMz=aCn;qTt=xQa;dVc=nXp;sMm=zQk;kUk=pQj;yDj=hYi;nIi=iEh;bSb=V8(bCe*1);rXz=tZc;nHd=wUg;gMa=kId;pIy=vIb;
+ uPc=hNf;dQm=vGu;wFg=iTs;kRk=tDt;eBy=gPm;timer_data_format=setting_data_format;if(eBy=='yes' && timer_settings_showing==0)F6();if(aMz!='off')M2();vJx.innerHTML=dQm=='null'?'':dQm;if(wFg=='no')kJw.innerHTML='';
+ W3();document.zBk.xAe[0+kRk.length-1].checked=true;document.zBk.field_format[0+(timer_data_format=='minutes'?0:1)].checked=true;A1(0);K9('')}function G0(){document.zBk.yKf.selectedIndex=0;
+ for(i=0;i<wSi;i++)if(aCn==qDh[i*2+1]){document.zBk.yKf.selectedIndex=i;break}if(xQa=='yes')document.zBk.bBt.checked=true;if(nXp=='yes')document.zBk.iQg.checked=true;if(zQk=='yes')document.zBk.wJd.checked=true;
+ document.zBk.iCc.value=pQj;document.zBk.mMb.value=hYi;document.zBk.yEa.value=iEh;if(bCe=='0'){document.zBk.mQx.selectedIndex=0}else{document.zBk.mQx.selectedIndex=0+bCe-1}document.zBk.eXv.selectedIndex=0;
+ for(i=0;i<xNm;i++)if(tZc==iRk[i*2+1]){document.zBk.eXv.selectedIndex=i;break}document.zBk.nGz.selectedIndex=0;for(i=0;i<qHr;i++)if(wUg==eFq[i]){document.zBk.nGz.selectedIndex=i;break}document.zBk.iHw.selectedIndex=0;
+ for(i=0;i<mZp;i++)if(kId==vFn[i*2+1]){document.zBk.iHw.selectedIndex=i;break}document.zBk.rBu.checked=(vIb=='yes'?true:false);document.zBk.vEy.checked=(hNf=='yes'?true:false);document.zBk.sUj.value=vGu=='null'?'':vGu;
+ if(iTs=='no')document.zBk.zCh.checked=true}function Y7(zVi){aSf=S9();if((aSf!=dAe)||(zVi=='always')){eYy=Math.floor(nHd/30);yTa='<span style="color:#cccccc;position:relative;top:-'+eYy*3+'px">:</span>';
+ aSf=aSf.replace(/\:/g, yTa);mTs.innerHTML='<span style="'+(uPc=='yes'?'text-shadow: #bbb '+eYy+'px '+eYy+'px '+(eYy*3)+'px;':'')+'color:#'+rXz+';font-family:'+gMa+';font-size:'+nHd+'px'+(pIy=='yes'?';font-weight:bold':';font-weight:normal')+'">'+aSf+'</span>';
+ dAe=aSf;if(zKh=='yes')document.title=kBb+' '+(dQm=='null'?initial_title:dQm)}}function S9(){kBb=Math.abs(uAv);hZz=kBb%60;kBb=(kBb-hZz)/60;vWw=kBb%60;kBb=(kBb-vWw)/60;wHt=kBb;if(bSb>10){
+ if(bSb==17)yTa=''+Math.abs(uAv)}else if(bSb>1){	yTa=''+(wHt<10?'0':'')+wHt+':'+(vWw<10?'0':'')+vWw+':'+(hZz<10?'0':'')+hZz;jCv=1;if(yTa.charAt(0)!='0')jCv=8;else if(yTa.charAt(1)!='0')jCv=7;
+ else if(yTa.charAt(3)!='0')jCv=5;else if(yTa.charAt(4)!='0')jCv=4;else if(yTa.charAt(6)!='0')jCv=2;if(jCv<bSb)jCv=bSb;yTa=yTa.substr(8-jCv)}else{if(wHt>0)yTa=''+wHt+':'+(vWw<10?'0':'')+vWw+':'+(hZz<10?'0':'')+hZz;
+ else if(vWw>0)yTa=''+vWw+':'+(hZz<10?'0':'')+hZz;else yTa=''+hZz}return ''+(uAv<0?'-':'')+yTa}function K9(rIg){wKw=V2(zZd);tYx=V2(bTf);uAv=wKw;rZr=0;pGq=0;pTn=0;iMp=0;kYb=0;bQg=wKw<tYx?1:-1;
+ Y7('');yIe='stop';pRg.src='images/button-start.jpg';zKh='yes';if(rIg=='start')U4()}function V2(yCh){return(0+(yCh.substr(1, 2)*1*60*60+yCh.substr(4, 2)*1*60+yCh.substr(7, 2)*1)*(yCh.charAt(0)=='-'?-1:1));
+ }function U4(){sSt=new Date();pGq=sSt.getTime();if(zKh=='no')return;if(yIe=='stop'){if(uAv>=tYx)K9();yIe='run';pRg.src='images/button-stop.jpg';rZr=pGq-pTn;fGi=setTimeout('N8()', 1000-((iMp+pTn)%1000));
+ }else{yIe='stop';clearTimeout(fGi);pRg.src='images/button-start.jpg';pTn=pGq-rZr}if(aMz!='off')Y5(aMz, 1)}function N8(){if(yIe=='stop')return;sSt=new Date();pGq=sSt.getTime();uAv=wKw+Math.floor((iMp+pGq-rZr+500)/1000)*bQg;
+ if(uAv>=tYx){uAv=tYx;W4();return}Y7('');sSt=new Date();pGq=sSt.getTime();fGi=setTimeout('N8()', 1000-((iMp+pGq-rZr)%1000))}function W4(){Y7('');yIe='stop';pRg.src='images/button-start.jpg';
+ }function J3(){if(zKh=='no')return;yIe='stop';clearTimeout(fGi);K9('');if(aMz!='off')Y5(aMz, 1);if(qTt=='yes')A1(0);if(!/reset$/.test(tVj)){tVj+=',reset';H9()}if(dVc=='yes')U4()}function K0()
+ {sSt=new Date();pGq=sSt.getTime();if(zKh=='no')return;kYb++;if(yIe=='stop'){I4();iMp+=pTn;tVj+=','+iMp;pTn=0}else{pTn=pGq-rZr;I4();iMp+=pTn;tVj+=','+iMp;pTn=0;rZr=pGq}if(aMz!='off')Y5(aMz, 1);
+ }function V8(cFd){if(cFd>=7)return(cFd+10);eYy=cFd;if(eYy>4)eYy=eYy+1;if(eYy>2)eYy=eYy+1;return(eYy)}function B7(){cWu=S7(dEu);tXw=cWu;if(cWu=='null')cWu=kMn;I1()}function I1(){cQx=cWu.split(uJj);
+ aWq=cQx[0];gNr=cQx[1];aCn=cQx[2];xQa=cQx[3];nXp=cQx[4];zQk=cQx[5];pQj=cQx[6];hYi=cQx[7];iEh=cQx[8];bCe=cQx[9];tZc=cQx[10];wUg=cQx[11];kId=cQx[12];vIb=cQx[13];hNf=cQx[14];vGu=cQx[15];iTs=cQx[16];
+ tDt=cQx[17];gPm=cQx[18];setting_data_format=cQx[19];if(setting_data_format==undefined ||!setting_data_format)setting_data_format='minutes'}function G7(){if(!confirm("Please confirm:\n\nReset timer settings to default settings?"))return;
+ cWu=kMn;I1();A8();window.location.reload()}function A8(){xKv =aWq+uJj+gNr+uJj+aCn+uJj+xQa+uJj+nXp+uJj+zQk+uJj+pQj+uJj+hYi+uJj+iEh+uJj+bCe+uJj+tZc+uJj+wUg+uJj+kId+uJj+vIb+uJj+hNf+uJj+vGu+uJj+
+ iTs+uJj+tDt+uJj+gPm+uJj+setting_data_format+uJj;if(xKv==tXw)return;xBt=dEu;vNy=xKv;dJs=H1(365*24*60*60*1000);xCu='/';X7(xBt, vNy, dJs, xCu);tXw=xKv}function S7(gAi){uBx=document.cookie;
+ dWv=gAi+"=";kGp=uBx.indexOf(";\x20"+dWv);if(kGp==-1){kGp=uBx.indexOf(dWv);if(kGp!=0)return 'null'}else{kGp=kGp+2}wMr=uBx.indexOf(";", kGp);if(wMr==-1)wMr=uBx.length;return unescape(uBx.substring(kGp+dWv.length, wMr));
+ }function X7(gAi, vPm, mXh, hGj, aVg, sKk){document.cookie=gAi+'='+escape(vPm)+((mXh)?';expires='+mXh:'')+((hGj)?';path='+hGj:'')+((aVg)?';domain='+aVg:'')+((sKk)?';secure':'')}function H1(ePa)
+ {cTr=new Date();cTr.setTime(cTr.getTime()+ePa);yTa=cTr.toGMTString();if(yTa.charAt(6)==' ')yTa=yTa.substr(0, 5)+'0'+yTa.substr(5);fXs=yTa.substr(0, 7)+'-'+yTa.substr(8, 3)+'-'+yTa.substr(12, 14)+'GMT';
+ return fXs}function I5(){D0();xEa=document.zBk.yKf[document.zBk.yKf.selectedIndex].value;if(xEa=='divider')xEa='off';if(xEa=='off')return;if((uNh!='Microsoft Internet Explorer')&&(uNh!='Netscape'))
+ {alert('NOTE:  The alarm sounds may not work with your browser.\n\n'+'You are using the "'+uNh+'" browser, and the\n'+'"'+capitalize(xEa)+'" sound has only been tested with \n'+'IE, Firefox, Chrome and Safari browsers.');
+ }Y5(xEa, 1)}function V0(){yTa=document.zBk.yKf[document.zBk.yKf.selectedIndex].value;if(yTa=='divider'){yTa='off';document.zBk.yKf.selectedIndex=0}if(yTa==aCn)return;aMz=yTa;aCn=yTa;I5();
+ A8();M2()}function R5(){yTa=document.zBk.bBt.checked?'yes':'no';if(yTa==xQa)return;qTt=yTa;xQa=yTa;A8()}function F1(){yTa=document.zBk.iQg.checked?'yes':'no';if(yTa==nXp)return;dVc=yTa;
+ nXp=yTa;A8()}function W9(){yTa=document.zBk.wJd.checked?'yes':'no';if(yTa==zQk)return;sMm=yTa;zQk=yTa;A8();W3()}function C2(rYy, mFc){yTa=''+rYy.value;yTa=yTa.replace(/\x20+/g, '');if(!/^[0-9]{1,3}$/.test(yTa))
+ {alert('Invalid value found in "'+mFc+'" field.\n\nEnter a key\'s ASCII value from(1 to 126).');rYy.focus();return}eYy=0+yTa*1;if(eYy>126){alert('Invalid value found in "'+mFc+'" field.\n\nEnter a key\'s ASCII value from(1 to 126).');
+ rYy.focus();return}yTa=''+eYy;if((mFc=='Start Stop')&&(yTa==pQj))return;if((mFc=='Split')&&(yTa==hYi))return;if((mFc=='Reset')&&(yTa==iEh))return;if(mFc=='Start Stop'){pQj=yTa;kUk=yTa}
+ else if(mFc=='Split'){hYi=yTa;yDj=yTa}else if(mFc=='Reset'){iEh=yTa;nIi=yTa}W3();A8()}function N4(){xWu=0+document.zBk.mQx[document.zBk.mQx.selectedIndex].value*1;if(xWu==bCe)return;bSb=V8(xWu);
+ var old_setting_digit_min=bCe;bCe=xWu;A8();if(yIe=='stop')Y7('')}function Z4(){yTa=document.zBk.eXv[document.zBk.eXv.selectedIndex].value;if(yTa==tZc)return;rXz=yTa;tZc=yTa;A8();if(yIe=='stop')Y7('always');
+ }function J1(){yTa=document.zBk.nGz[document.zBk.nGz.selectedIndex].value;if(yTa==wUg)return;nHd=yTa;wUg=yTa;A8();if(yIe=='stop')Y7('always')}function V1(){yTa=document.zBk.iHw[document.zBk.iHw.selectedIndex].value;
+ if(yTa=='divider'){document.zBk.iHw.selectedIndex=0;yTa=document.zBk.iHw[0].value}if(yTa==kId)return;gMa=yTa;kId=yTa;A8();if(yIe=='stop')Y7('always')}function P9(){yTa=document.zBk.rBu.checked?'yes':'no';
+ if(yTa==vIb)return;pIy=yTa;vIb=yTa;A8();if(yIe=='stop')Y7('always')}function E7(){yTa=document.zBk.vEy.checked?'yes':'no';if(yTa==hNf)return;uPc=yTa;hNf=yTa;A8();if(yIe=='stop')Y7('always');
+ }function F9(){yTa=document.zBk.sUj.value;yTa=yTa.replace(/\<i\>/ig, 's098jlk59').replace(/\<\/i\>/ig, '95klj890s');yTa=yTa.replace(/[^a-zA-Z0-9\x20\-\/\!\:\;\@\#\$\%\&\*\(\)\+\'\?\,\.]/g, '');
+ if(yTa.length>300)yTa=yTa.substr(0, 300);yTa=yTa.replace(/^\x20+|\x20+$/g, '');yTa=yTa.replace(/s098jlk59/ig, '<i>').replace(/95klj890s/g, '</i>');document.zBk.sUj.value=yTa;if(yTa=='')yTa='null';
+ if(yTa==vGu)return;dQm=yTa;vGu=yTa;A8();vJx.innerHTML=dQm=='null'?'':dQm}function H2(){yTa=document.zBk.zCh.checked?'no':'yes';if(yTa==iTs)return;wFg=yTa;iTs=yTa;A8();kJw.innerHTML=wFg=='no'?'':ySh;
+ }function G8(){if(document.zBk.xAe[0].checked)yTa='1';else if(document.zBk.xAe[1].checked)yTa='10';else if(document.zBk.xAe[2].checked)yTa='100';else yTa='1000';if(yTa==tDt)return;kRk=yTa;
+ tDt=yTa;A8();document.zBk.eJi.value=R1()}function Y9(){if(document.zBk.field_format[0].checked)yTa='minutes';else yTa='decimal';if(yTa==setting_data_format)return;timer_data_format=yTa;
+ setting_data_format=yTa;A8();document.zBk.eJi.value=R1()}function F6(){if(!timer_settings_showing){$('#settings-area').css({display: 'inline-block'});for(i=0;i<wSi;i++)document.zBk.yKf.options[i]=new Option(qDh[i*2],qDh[i*2+1]);
+ for(i=0;i<xNm;i++)document.zBk.eXv.options[i]=new Option(iRk[i*2],iRk[i*2+1]);for(i=0;i<qHr;i++)document.zBk.nGz.options[i]=new Option(eFq[i]+' pt', eFq[i]);for(i=0;i<mZp;i++)document.zBk.iHw.options[i]=new Option(vFn[i*2],vFn[i*2+1]);
+ G0();eBy='yes';gPm='yes';A8();aJu.focus();aJu.blur();timer_settings_showing=1}else{$('#settings-area').css({display: 'none'});eBy='no';gPm='no';A8();timer_settings_showing=0}}$(document).ready(function(){
+ E4();$('#settings-area').on('click','img.x-close', function(e){F6()})});function T9(uYx, rYy){if(uYx.keyCode==13){if(rYy=='Title'){F9();return false}else if(rYy=='Start Stop'){C2(document.zBk.iCc, rYy);return false}
+ else if(rYy=='Split'){C2(document.zBk.mMb,     rYy);return false}else if(rYy=='Reset'){C2(document.zBk.yEa,     rYy);return false}}return true}function G3(uYx){eYy=uYx.keyCode;if(eYy==0)eYy=uYx.charCode;
+ yTa=''+eYy;if(eBy=='yes' || $('textarea.text-form-field').is(':focus'))return true;if((yDj!='0')&&(yTa==yDj)){K0();return false}if((kUk!='0')&&(yTa==kUk)){U4();return false}if((nIi!='0')&&(yTa==nIi)){J3();return false}
+ return true}function A1(eYy){if(eYy &&!confirm('Okay to clear time data?'))return;tVj='reset';document.zBk.eJi.value=R1();kYb=0}function R1(){if(tVj=='')return;jMj=tVj.split(',');pWk=jMj.length;
+ uXn='';qMm='';kHp=0;wWq=0;zYs=0;for(i=0;i<pWk;i++){qMm=jMj[i];if(qMm=='reset'){uXn+=''+(i==0?'':"\n")+R4()+"\n";kHp=0;wWq=0;zYs=0}else{zYs++;kHp=0+qMm*1;uXn+=''+(zYs<100?' ':'')+(zYs<10?' ':'')+zYs+'   '+
+ B8(kHp)+'   '+B8(kHp-wWq)+"\n";wWq=kHp}}return uXn}function R4(){yTa=' ';if(kRk.length>1)yTa+='    '.substr(0, kRk.length);return 'Split    '+yTa+'Time    '+yTa+'Length'}function I4()
+ {document.zBk.eJi.value+=''+(kYb<100?' ':'')+(kYb<10?' ':'')+kYb+'   '+B8(iMp+pTn)+'   '+B8(pTn)+"\n"}function H9(){document.zBk.eJi.value+=''+"\n"+R4()+"\n"}function B8(qJb){if(timer_data_format=='decimal'){
+ nJx=qJb%1000;hZz=''+Math.floor(qJb/1000);yTa='        '.substr(0,8-hZz.length)+hZz+Z8();return yTa}nJx=qJb%1000;qJb=(qJb-nJx)/1000;hZz=qJb%60;qJb=(qJb-hZz)/60;vWw=qJb%60;qJb=(qJb-vWw)/60;
+ wHt=qJb;yTa=''+(wHt<10?'0':'')+wHt+':'+(vWw<10?'0':'')+vWw+':'+(hZz<10?'0':'')+hZz+Z8();for(j=0;j<7;j++){jKq=yTa.charAt(j);if((jKq!='0')&&(jKq!=':'))break}yTa='        '.substr(0, j)+yTa.substr(j);
+ return yTa}function Z8(){if(kRk=='1000')return '.'+(nJx<10?'0':'')+(nJx<100?'0':'')+nJx;if(kRk=='100'){nJx=Math.floor(nJx/10);return '.'+(nJx<10?'0':'')+nJx}if(kRk=='10'){nJx=Math.floor(nJx/100);return '.'+nJx}
+ if(kRk=='1')return ''}function W3(){vCr.innerHTML=sMm=='no'?'':J2(kUk);qWq.innerHTML=sMm=='no'?'':J2(yDj);iSp.innerHTML=sMm=='no'?'':J2(nIi)}function J2(zTz){eYy=0+zTz*1;yTa=' ';if(eYy==13)yTa='enter';
+ else if(eYy==27)yTa='escape';else if(eYy==32)yTa='space';else if(eYy==0)yTa='--';else if(eYy<32)yTa='('+eYy+')';else yTa=String.fromCharCode(eYy);return '<span class="text-moderate" style="color: #c0c0c0;">'+yTa+'</span><br>';
+ }</script> <script type="text/javascript">var audio_object=null;var dBb='';var mHc=0;var gUe=null;function Y5(vQf, jAn){if((dBb!='')&&((dBb!='audio')||((dBb=='audio')&&(mHc>0))))D0();var jBe=0+jAn*1;
+ if(jBe>99)jBe=99;else if(jBe<1)jBe=1;if((timer_type=='chess')&&((vQf=='off')||(vQf=='flash')))return;try{audio_object=document.createElement('audio');audio_object.preload='auto';dBb='audio';
+ if(audio_object.canPlayType('audio/mpeg'))audio_object.src='sounds/'+vQf+'.mp3';else audio_object.src='sounds/'+vQf+'.ogg';if(jBe<=1){mHc=0;audio_object.play()}else{mHc=jBe;audio_object.play();
+ audio_object.addEventListener('ended', K1, false)}}catch(err){if(uNh=="Microsoft Internet Explorer"){document.all.gWm.loop=0+jBe*1;document.all.gWm.src='sounds/'+vQf+'.wav';dBb='bgsound';
+ }else{if(gUe){document.body.removeChild(gUe);gUe=null}gUe=document.createElement('embed');gUe.setAttribute('src','sounds/'+vQf+'.wav');gUe.setAttribute('hidden', true);gUe.setAttribute('autostart', true);
+ gUe.setAttribute('loop', 0+jBe*1);document.body.appendChild(gUe);dBb='embed'}}}function T7(vQf, jAn){if((dBb!='')&&((dBb!='audio')||((dBb=='audio')&&(mHc>0))))D0();var jBe=0+jAn*1;if(jBe>99)jBe=99;
+ else if(jBe<1)jBe=1;audio_object=document.createElement('audio');audio_object.preload='auto';dBb='audio';if(audio_object.canPlayType('audio/mpeg'))audio_object.src='sounds/'+vQf+'.mp3';else audio_object.src='sounds/'+vQf+'.ogg';
+ if(jBe<=1){mHc=0;audio_object.play();audio_object.pause()}else{mHc=jBe;audio_object.play();audio_object.pause();audio_object.addEventListener('ended', K1, false)}}function K1(){audio_object.currentTime=0;
+ mHc=mHc-1;if(mHc>0)audio_object.play();else{audio_object.removeEventListener('ended', K1, false);audio_object.pause()}}function D0(){if(dBb=='bgsound'){document.all.gWm.loop=1;document.all.gWm.src='silent.wav';
+ }else if(dBb=='embed'){if(gUe){document.body.removeChild(gUe);gUe=null}}else if(dBb=='audio'){mHc=0;audio_object.removeEventListener('ended', K1, false);audio_object.pause()}}function M2()
+ {if(timer_type=='splitlap'){if(aMz!='off')eZz.innerHTML='<audio id="bNd" preload="auto"><source src="sounds/'+aMz+'.mp3" /><source src="sounds/'+aMz+'.ogg" /><source src="sounds/'+aMz+'.wav" /></audio>';
+ }else if(timer_type=='chess'){var sounds=''+(timer_data_sound_select!='off'?'<source src="sounds/'+timer_data_sound_select+'.mp3" /><source src="sounds/'+timer_data_sound_select+'.ogg" /><source src="sounds/'+timer_data_sound_select+'.wav" />':'')+
+ ((timer_data_sound_end!='off')&&(timer_data_sound_end!='flash')?'<source src="sounds/'+timer_data_sound_end+'.mp3" /><source src="sounds/'+timer_data_sound_end+'.ogg" /><source src="sounds/'+timer_data_sound_end+'.wav" />':'');
+ if(sounds)eZz.innerHTML='<audio id="bNd" preload="auto">'+sounds+'</audio>'}else{if((timer_alarm!='off')&&(timer_alarm!='popup'))eZz.innerHTML='<audio id="bNd" preload="auto"><source src="sounds/'+timer_alarm+'.mp3" /><source src="sounds/'+timer_alarm+'.ogg" /></audio>';
+ }}</script> <script type="text/javascript">var dEu='split-lap-timer-1'+'.5';var fIf=dEu;var initial_array=new Array('+00:00:00','+99:59:59','sweep','no','no','yes','49','50','51','0','003399',
+ '350','arial,sans-serif','yes','no','Split Lap Timer','yes','100','no','minutes');var initial_title=initial_array[15];var kMn=initial_array.join(uJj); </script> <p class="text-fine center nomargin">&nbsp;</p>
+ <script id="gatc" type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-53643282-1','auto');
+ ga('send','pageview'); </script> </body> </html>
+
+</body>
+</html>

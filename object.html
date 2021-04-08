@@ -1,0 +1,108 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Object</title>
+
+    </head>
+    <body>
+        <center>
+            <table>
+                <tr>
+                    <p style="color: red;">You have 50 seconds to fill this form.</p>
+                    <p id="sc">seconds remaining</p>
+                    <p style="color: red;">Your time starts now.</p>
+                    <td colspan="2">Job Application Form</td>
+                    
+                </tr>
+                <tr>
+                    <td>Firstname</td>
+                    <td><input type="text" id="fn"></td>
+                </tr>
+                <tr>
+                    <td>Lastname</td>
+                    <td><input type="text" id="In"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date" id="out"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td >
+                        <label for="">Male</label> <input id="one" type="radio" name="Gender" > 
+                        <label for="">Female</label> <input id="two" type="radio" name="Gender"> </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>State of Origin</td>
+                    <td><select name="" id="bub">
+                        <option value="">Abuja</option>
+                        <option value="">Lagos</option>
+                        <option value="">Oyo</option>
+                        <option value="">Osun</option>
+
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><button>Reset</button></td>
+                    <td><button>Submit</button></td>
+                </tr>
+                
+            </table>
+        </center>
+    </body>
+    <script type="text/javascript">
+    var i = 0;
+    function checkTime()
+    {
+        i++;
+        u=50-i;
+        if(u>=0)
+        {
+            sc.innerHTML = u;
+        }
+        
+        
+        if(i>=10){
+            fn.focus()
+            fn.disabled= true;
+        }
+        if(i>=20){
+            In.focus()
+            In.disabled= true;
+
+        }
+        if(i>=30){
+            out.focus()
+            out.disabled= true;
+
+        }
+        if(i>=50){
+            bub.focus()
+            bub.disabled= true;
+
+        }
+        if(i>=40){
+            one.focus()
+            one.disabled= true;
+
+        }
+        if(i>=40){
+            two.focus()
+            two.disabled= true;
+
+        }
+        
+        
+        setTimeout(checkTime, 1000);
+    }
+    checkTime()
+
+    </script>
+ </html>

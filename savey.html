@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="save.css">
+</head>
+<body>
+    <h1>ADD STUDENT:</h1>
+    <div id="result">
+    <input type="text" id="first" placeholder="FirstName">
+    <input type="text" id="last" placeholder="LastName">
+    <input type="text" id="dep" placeholder="Department">
+    <input type="number" id="lev" placeholder="Level">
+    
+    <button id="Add" onclick="myFunc()">Add  Student</button>
+    <button id="tell" onclick="display()">Display All Students</button>
+    <button id="vocal"  onclick="playAll()">Save</button>
+    </div>
+    <div id="sag"></div>
+    <div id="saga"></div>
+    <script>
+        let allStudents=[];
+        function myFunc(){
+            let newStudent = {};
+            let matricNumber = "SQI" + Math.floor(Math.random()*1000000)
+            newStudent.FirstName= first.value;
+            newStudent.LastName= last.value;
+            newStudent.Department= dep.value;
+            newStudent.Level=lev.value;
+            newStudent.matric= matricNumber;
+            allStudents.push(newStudent);
+            sag.innerHTML= "Student Id: " + newStudent.matric + "<br>";
+            sag.innerHTML += "Name: " + newStudent.FirstName + " " + newStudent.LastName + "<br>";
+            sag.innerHTML += "Department: " + newStudent.Department+ "<br>";
+            sag.innerHTML += "Level: " + newStudent.Level;
+            console.log(allStudents)   
+        }
+        function display(){
+            first.value=" ";
+            last.value =" ";
+            dep.value =" ";
+            lev.value =" ";
+
+            saga.innerHTML = "";
+            for( var i = 0; i < allStudents.length; i++){
+                saga.innerHTML += "<h1>Student "+eval(i+1)+"</h1>";
+                saga.innerHTML += "Student Id: " + allStudents[i].matric + "<br>";
+                saga.innerHTML += "Name: " + allStudents[i].FirstName + " " + allStudents[i].LastName + "<br>";
+                saga.innerHTML += "Department: " + allStudents[i].Department+ "<br>";
+                saga.innerHTML += "Level: " + allStudents[i].Level;
+                saga.innerHTML += "<button onclick='mybtn("+i+")'>Delete</button>";
+                saga.innerHTML += "<button onclick='mybtm("+i+")'>Edit</button>";
+                sag.style.display="none";    
+            }   
+                 
+            }
+            function mybtn(index){
+                allStudents.splice(index, 1);
+                display();
+            } 
+            function mybtm(index){ 
+                first.value= allStudents[index].FirstName;
+                last.value = allStudents[index].LastName;
+                dep.value = allStudents[index].Department;
+                lev.value = allStudents[index].Level;                
+            }
+    </script>
+</body>
+</html>

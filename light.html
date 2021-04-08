@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="light.css">
+        <script type="text/javascript">
+        function on()
+        {
+            document.getElementById("window1").style.backgroundColor="yellow"
+            document.getElementById("window2").style.backgroundColor="yellow"
+            document.getElementById("window3").style.backgroundColor="yellow"
+            document.getElementById("window4").style.backgroundColor="yellow"
+            document.getElementById("window5").style.backgroundColor="yellow"
+            document.getElementById("myImage").src="images/bulbon.gif"};
+        function off()
+        {
+            document.getElementById("window1").style.backgroundColor="white"
+            document.getElementById("window2").style.backgroundColor="white"
+            document.getElementById("window3").style.backgroundColor="white"
+            document.getElementById("window4").style.backgroundColor="white"
+            document.getElementById("window5").style.backgroundColor="white"
+            document.getElementById("myImages").src="images/bulboff.gif"};
+
+
+        </script>
+    </head>
+    <body>
+        
+        <img style="position: absolute; left: 500px; height:600px; width:800px; transform: rotate(360deg);" src="images/house-png-icon-5.png" alt="">
+        
+    <img id="myImages" style="width: 15px; height: 30px; position:absolute; left: 100px; top: 380px; transform: rotate(180deg);" src="images/bulboff.gif" style="width:100px">
+    <img id="myImage" src="images/bulbon.gif" style="width: 15px; height: 30px; position:absolute; left: 100px; top: 380px; transform: rotate(180deg);" alt="">
+    <div id="lik">
+        <p style=" color:white; text-align: center; font-size: 22px; ">On and Off Circuit</p>
+        <button id="on" onclick="on()">On</button>
+        <button id="off" onclick="off()"> Off</button>
+
+    
+    </div>
+    <div id="window1"></div>
+    <div id="window2"></div>
+    <div id="window3"></div>
+    <div id="window4"></div>
+    <div id="window5"></div>
+
+    </body>
+</html>

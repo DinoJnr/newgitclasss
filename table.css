@@ -1,0 +1,65 @@
+body{
+    background-color: cyan;
+}
+#row{
+    position: absolute;
+    top: 120px;
+    left: 450px;
+    background-color: sandybrown;
+    color: whitesmoke;
+    border-radius: 20px;
+    
+}
+#col{
+    position: absolute;
+    top: 120px;
+    left: 550px;
+    background-color: sandybrown;
+    color: whitesmoke;
+    border-radius: 20px;
+
+}
+h1{
+    color: darkgoldenrod;
+}
+#sign{
+    position: absolute;
+    top: 160px;
+    left: 480px;
+    background-color: sienna;
+    color: whitesmoke;
+    width: 100px;
+    border-radius: 20px;
+}
+#eva{
+    background-color: darkgoldenrod;
+    border-radius: 30px;
+    width: 100px;
+    color: darkorange;
+    position: absolute;
+    top: 200px;
+    left: 480px;
+    outline: none;
+    
+}
+#result{
+    border: 1px thick red;
+    background-color: teal;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    border-radius: 15px;
+    outline: none;
+    color: burlywood;
+}
+#add{ 
+    background-color: chocolate;
+}
+#sub{ 
+    background-color: cornflowerblue;}
+#multi{ 
+    background-color: crimson;
+}
+#div{ 
+    background-color: darkgreen;
+}

@@ -1,0 +1,82 @@
+#on{
+    position: absolute;
+    top: 250px ;
+    left: 30px ;
+    background-color: yellowgreen;
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+    border: red 3px solid;
+}
+#off{
+    position: absolute;
+    top: 250px ;
+    left: 120px ;
+    background-color: yellowgreen;
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+    border: red 3px solid;
+}
+#lik{
+    border: 6px solid  turquoise;
+    height: 300px;
+    width: 200px;
+    background-color: #ff6347;
+    border-radius: 10px;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+#window1{
+    border: 1px yellow solid;
+    width: 38px;
+    height: 38px;
+    background-color: yellow;
+    position: absolute;
+    top: 382px;
+    left: 720px;
+   
+    
+}
+#window2{
+    border: 1px yellow solid;
+    width: 38px;
+    height: 38px;
+    background-color: yellow;
+    position: absolute;
+    top: 382px;
+    left: 784px;
+
+}
+#window3{
+    border: 1px yellow solid;
+    width: 38px;
+    height: 38px;
+    background-color: yellow;
+    position: absolute;
+    top: 442px;
+    left: 720px;
+
+
+}
+#window4{
+    border: 1px yellow solid;
+    width: 38px;
+    height: 38px;
+    background-color: yellow;
+    position: absolute;
+    top: 442px;
+    left: 784px;
+
+}
+#window5{
+    border: 1px yellow solid;
+    width: 102px;
+    height: 160px;
+    background-color: yellow;
+    position: absolute;
+    top: 420px;
+    left: 950px;
+
+}

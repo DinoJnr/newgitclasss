@@ -1,0 +1,245 @@
+#one{
+    border: 2px solid deeppink ;
+    background-color: rgba(103, 216, 51, 0.568);
+    width: 40px;
+    height: 30px;
+    border-radius: 30px;  
+    outline: none;
+}
+#two{ border: 2px solid deeppink ;
+    background-color: rgba(103, 216, 51, 0.568);
+    width: 40px;
+    height: 30px;
+    border-radius: 30px;  
+    outline: none; 
+}
+#three{
+    border: 2px solid deeppink ;
+    background-color: rgba(103, 216, 51, 0.568);
+    width: 40px;
+    height: 30px;
+    border-radius: 30px; 
+    outline: none;  
+}
+#guff{
+    display: none;
+}
+#four{
+    border: 2px solid deeppink ;
+    background-color: rgba(103, 216, 51, 0.568);
+    width: 40px;
+    height: 30px;
+    border-radius: 30px; 
+    outline: none;
+}
+#five{
+    border: 2px solid deeppink ;
+    background-color: rgba(103, 216, 51, 0.568);
+    width: 40px;
+    height: 30px;
+    border-radius: 30px;
+    outline: none;  
+}
+#six{
+    border: 2px solid deeppink ;
+    background-color: rgba(103, 216, 51, 0.568);
+    width: 40px;
+    height: 30px;
+    border-radius: 30px;
+    outline: none;
+}
+#seven{
+    border: 2px solid deeppink ;
+    background-color: rgba(103, 216, 51, 0.568);
+    width: 40px;
+    height: 30px;
+    border-radius: 30px; 
+    outline: none; 
+}
+#eight{
+    border: 2px solid deeppink ;
+    background-color: rgba(103, 216, 51, 0.568);
+    width: 40px;
+    height: 30px;
+    border-radius: 30px;   
+    outline: none;
+}
+#nine{
+    border: 2px solid deeppink ;
+    background-color: rgba(103, 216, 51, 0.568);
+    width: 40px;
+    height: 30px;
+    border-radius: 30px;   
+    outline: none;
+}
+#sub{
+    border: 2px solid turquoise ;
+    background-color: rgb(3, 86, 100);
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    display: none;
+    position: absolute;
+    top: 160px;
+    left: 500px;
+    outline: none;
+    color: honeydew;
+    /* pointer-events: fill;
+    box-shadow: violet; */
+}
+#starte{
+    border: 2px solid deeppink ;
+    background-color: slateblue;
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    display: none;
+    outline: none;
+}
+#con{
+    border: 2px solid deeppink ;
+    background-color: rgb(182, 123, 123);
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    top: 380px;
+    left: 550px;
+    display: none;
+    outline: none;
+}
+#restarte{
+    border: 2px solid deeppink ;
+    background-color: rgb(182, 123, 123);
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    top: 380px;
+    left: 450px;
+    display: none;
+    outline: none;
+}
+#stope{
+    border: 2px solid deeppink ;
+    background-color: rgb(182, 123, 123);
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    top: 380px;
+    left: 650px;
+    display: none;
+    outline: none;
+}
+#display{
+    position: absolute;
+    top: 220px;
+    left: 400px;
+    width: 320px;
+    height: 50px;
+    /* background-color: palevioletred; */
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    color: greenyellow;
+}
+h1{
+    position: absolute;
+    left: 450px;
+    color: rgb(25, 0, 255);
+}
+#first{
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 350px;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgb(13, 175, 92);
+}
+#second{
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 550px;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgb(13, 175, 92);
+}
+table{
+    display: none;
+}
+#lauche{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    border: 2px solid rgb(31, 146, 199) ;
+    background-color: burlywood;
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    display: block;
+    outline: none;
+    color: gold;
+}
+#table1{
+    display: none;
+}
+#table2{
+    display: none;
+    position: absolute;
+    top: 100px;
+    margin-top:-150px;
+}
+#cho{
+    display: none;
+
+}
+#who{
+    display: none;
+}
+#qtn{
+    display: none;
+    color: sandybrown;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+#qtn1{
+    display: none;
+    border: 2px solid deeppink ;
+    background-color: rgba(218, 11, 21, 0.315);
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    top: 160px;
+    outline: none;
+    left: 600px;
+
+}
+#qtn2{
+    display: none;
+    outline: none;
+    border: 2px solid deeppink ;
+    background-color: rgba(218, 11, 21, 0.315);
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    top: 160px;
+    left: 400px;
+
+}
+#total{
+    display: none;
+    position: absolute;
+    top: 300px;
+    
+    width: 200px;
+    height: 50px;
+}

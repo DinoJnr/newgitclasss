@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Teller Machine</title>
+
+</head>
+<body>
+    
+        <table border="1" width="80%">
+            <tr  style=" width: 400px; height: 100px ; border: 2px;">
+                <td align="center" bgcolor="pink"  colspan="3"><h1 style="color: yellow ;">Automated Teller Machine</h1></td>
+    
+            </tr>
+            <tr>
+                <td width="25%" align="center"><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">Transfer</button></td>
+                <td rowspan="3" width="50%"><textarea name="" id="Message" cols="75" rows="5"></textarea><textarea name="" id="display" cols="75" rows="15"></textarea><button onclick="take()">Enter</button></td>
+                <td width="25%" align="center"><button onclick="cashout()">Withdraw</button></td>
+            </tr>
+            <tr >
+                <td align="center"><button >Recharge</button></td>
+                <td align="center"><button  onclick="showbalance()">Balance</button></td>
+            </tr>
+            <tr>
+                <td align="center"><button >Cancel</button></td>
+                <td align="center"><button>End</button></td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            var balance = 1000000;
+            var amount;
+        
+            function showbalance() {
+                message.value = "Your balance is :";
+                // display.value = balance;
+            }
+            function cashout() {
+                message.value = "Enter the amount you want to withdraw";
+            }
+            function take() {
+                amount = display.value
+                if(balance >= amount){
+                    balance =balance - amount
+                    message.value = "take your cash";}
+                    
+               else{
+                   message.value = "insufficent fund";
+               }
+            </script>
+
+
+</body>
+</html>

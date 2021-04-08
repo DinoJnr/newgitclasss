@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="myfunc(event)">Yes</button>
+    </div>
+    <button onclick="myfunc(event)">No</button>
+    <script>
+        function myfunc(e){
+            // e.target.innerHTML="GOOD";
+            // e.colsole.innerHTML="GOOD";
+            if(e.target.innerHTML=="O"){
+                e.target.innerHTML="X"
+            }
+            else if(e.target.innerHTML="X"){
+                e.target.innerHTML="O"
+            }
+            ;
+            
+        }
+    </script>
+</body>
+</html>

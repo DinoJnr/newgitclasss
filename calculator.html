@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<script>
+    function per(){saver.value += "%";}
+    function c(){saver.value = " ";}
+    function OFF(){}
+    function ON(){}
+    function seven(){saver.value += "7";}
+    function eight(){saver.value += "8"; }
+    function nine(){ saver.value += "9";}
+    function division(){ saver.value += "/";}
+    function four(){saver.value += "4";}
+    function five(){saver.value += "5";}
+    function six(){ saver.value += "6";}
+    function multiply(){ saver.value += "*";}
+    function one(){saver.value += "1";}
+    function two(){ saver.value += "2"; }
+    function three(){saver.value += "3";}
+    function minus(){saver.value += "-";}
+    function zero(){saver.value += "0";}
+    function point(){saver.value += "."; }
+    function equals(){
+        let g= saver.value
+        let h= eval(g)
+        saver.value = h
+    }
+    function plus(){saver.value += "+";}
+</script>
+<body style="background-color: coral;" >
+    <table id="two">
+        <h1 style="font-size: 20px; position: absolute; left: 580px; top: 100px; z-index: 2;" >CALCULATOR</h1>
+        <!-- <tr >
+            <td style="width: 250px; height: 40px; border: 2px solid; background-color: thistle; border-radius: 30px;" colspan="4"><textarea name="" id="" style="width: 400px; height: 40px; border-radius: 30px;"></textarea></td>
+            </tr> -->
+        <div id="we">
+            <input id="saver" type="text">
+        </div>
+
+        <tr>
+            <td><button onclick="per()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 150px;">%</button></td>
+            <td><button onclick="c()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 150px;">C</button></td>
+            <td><button onclick="OFF()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 150px;">^</button></td>
+            <td><button onclick="ON()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 150px;">ON</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="seven()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 220px;">7</button></td>
+            <td><button onclick="eight()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 220px;">8</button></td>
+            <td><button onclick="nine()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px; position: absolute; top: 220px;">9</button></td>
+            <td><button onclick="division()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 220px;">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="four()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 290px;">4</button></td>
+            <td><button onclick="five()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 290px;">5</button></td>
+            <td><button onclick="six()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 290px;">6</button></td>
+            <td><button onclick="multiply()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 290px;">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="one()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 360px;">1</button></td>
+            <td><button onclick="two()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 360px;">2</button></td>
+            <td><button onclick="three()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 360px;">3</button></td>
+            <td><button onclick="minus()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 360px;">-</button></td>
+        </tr>
+       <tr>
+           <td><button onclick="zero()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 430px;">0</button></td>
+           <td><button onclick="point()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 430px;">.</button></td>
+           <td><button onclick="equals()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;position: absolute; top: 430px;">=</button></td>
+           <td><button onclick="plus()" style="background-color: black;color: white; height: 40px; width: 50px; border-radius: 30px;  position: absolute; top: 430px;">+</button></td>
+       </tr>
+    </table>
+</body>
+</html>

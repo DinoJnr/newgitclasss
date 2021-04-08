@@ -1,0 +1,49 @@
+#star{
+    width: 90.57px;
+    height: 30px;
+    color: cyan;
+    background-color: darkblue;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    border-radius: 30px;
+}
+#se{
+    width: 80px;
+    height: 30px;
+    color: cyan;
+    background-color: darkblue;
+    position: absolute;
+    top: 200px;
+    left: 450px;
+    border-radius: 30px;
+}
+#sto{
+    width: 80px;
+    height: 30px;
+    color: cyan;
+    background-color: darkblue;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    border-radius: 30px;
+}
+#hour{
+    background-color: burlywood ;
+    width: 60px;
+    border-radius: 30px;
+    color: cadetblue;
+
+}
+#minute{
+    background-color: burlywood ;
+    width: 60px;
+    border-radius: 30px;
+    color: cadetblue;
+}
+#second{
+    background-color: burlywood ;
+    width: 60px;
+    border-radius: 30px;
+    color: cadetblue;
+}

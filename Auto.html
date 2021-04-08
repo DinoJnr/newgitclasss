@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Auto.css">
+    <script>
+
+        
+        var balance = 1000000;
+            function showBalance() {
+                message.value = "Your account balance is: "
+                display.value = balance;
+            }
+            function cashOut() {
+                message.value = "How much do you wanna withdraw? "
+            }
+            function process() {
+                amount = display.value;
+                if(balance >= amount) {
+                    balance = balance - amount;
+                    message.value = "Please take your cash..."
+                }
+                else {
+                    message.value = "Insufficient Funds"
+                }
+                
+            }
+            function Transfer(){
+                
+                message.value = "How much do you want to transfer?"
+                
+               
+                
+                
+            }
+
+            function end(){
+                message.value = "This section ended;"
+                
+            }
+            function tran(){
+                display.value = amount;
+                if(balance >= amount) {
+                    balance = balance - amount;
+                    message.value = "Transaction Successful..."
+                }
+                else {
+                    message.value = "Insufficient Funds"
+                }
+
+            }
+            // function number(){
+            //     display.value = amount;
+            // }
+    </script>
+</head>
+<body>
+    <center style="border: 36px solid black; width: 930px; height: 1000px; border-radius: 20px;position: absolute; top: 120px; left: 500px; background-color: turquoise;">
+    <table border="2" style=" width: 500px; height: 400px; position: absolute; top: 60px; left: 50px; " >
+        <tr>
+            <td align="center" bgcolor="pink"  colspan="3"><h1 style="color: yellow ;">Automated Teller Machine</h1></td>
+            
+        </tr>
+        <tr>
+            <td width="50px" align="center" height="50px"><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;" onclick="Transfer()">Transfer</button></td>
+            <td rowspan="3"width="50px" height="50px"><textarea id="message" style="text-align: center;" cols="75" rows="5"></textarea>
+            <textarea name="" id="display" style="text-align: center;" cols="75" rows="15"></textarea><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;" onclick="process()" >Enter</button></td>
+            <td width="50px" align="center"><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;" onclick="cashOut()">Withdraw</button></td>
+        </tr>
+        <tr>
+            <td  width="50px" align="center"><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">Recharge Pin </button></td>
+            
+            <td  width="50px" align="center"><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;" onclick="showBalance()">Balance</button></td>
+        </tr>
+        <tr>
+            <td  width="50px" align="center"><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">Cancel</button></td>
+            <td   width="50px"align="center"><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;" onclick="end()">End</button></td>
+            
+        </tr>
+
+    </table>
+
+    <table id="two">
+        <tr>
+            <td><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">1</button></td>
+            <td><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">2</button></td>
+            <td><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">3</button></td>
+        </tr>
+        <tr>
+            <td><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">4</button></td>
+            <td><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">5</button></td>
+            <td><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">6</button></td>
+        </tr>
+        <tr>
+            <td><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">7</button></td>
+            <td><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">8</button></td>
+            <td><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">9</button></td>
+        </tr>
+        <tr>
+            <td><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">ENTER</button></td>
+            <td><button style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">0</button></td>
+            <td><button onclick="tran()" style="background-color: black;color: white; height: 40px; width: 100px; border-radius: 30px;">CANCEl</button></td>
+        </tr>
+    </table>
+</center>
+   
+</body>
+</html>

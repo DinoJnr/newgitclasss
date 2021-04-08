@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="save.css">
+</head>
+<body>
+
+    <h1>ADD STUDENT:</h1>
+    <div id="result">
+    <input type="text" id="first" placeholder="FirstName">
+    <input type="text" id="last" placeholder="LastName">
+    <input type="text" id="dep" placeholder="Department">
+    <input type="number" id="lev" placeholder="Level">
+    
+    <button onclick="myFunc()">Add  Student</button>
+    <button onclick="display()">Display All Student</button>
+    </div>
+    <div style="display:none" id="sag"></div>
+    <div  style="display:none" id="saga"></div>
+    <!-- <input type="text " id="props" placeholder="property">
+    <input type="text" id="val" placeholder="value">
+    <button onclick="myFunc()">Click me</button> -->
+    <script>
+        let obj = {};
+        function myFunc(){
+            sag.style.display="block";
+            let FirstName = "FirstName";
+            obj[FirstName]=first.value;
+            let LastName= "LastName";
+            obj[LastName]= last.value;
+            let Dept= "Department";
+            obj[Dept] = dep.value;
+            let Level = "level";
+            obj[Level]=lev.value;
+            var matric= Math.floor(Math.random()*100000)+1
+            sag.innerHTML = "<br><br>" +"SQI"  + matric + "<br>" + "FirstName: " + first.value + "<br>" + "LastName: " + last.value + "<br>" + "Department: " + dep.value + "<br>" + "Level: " + lev.value + "<br>"+ "<br>";
+            console.log(obj)
+                 
+        }
+        function display(){
+            sag.style.display="block"
+            // var matric= Math.floor(Math.random()*100000)+1
+            sag.innerHTML += saga.innerHTML;
+            
+           
+        }
+    </script>
+</body>
+</html>

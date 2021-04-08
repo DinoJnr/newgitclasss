@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+
+    <script>
+        function evalu() {
+            let myTable = "<table border=2>";
+            for(var i = 1; i <= row.value; i++){
+                myTable+="<tr>"
+                for(var j = 1; j <= col.value; j++){
+                    let myCalculation = i + sign.value + j;
+                    myTable+="<td>"+myCalculation+"="+eval(myCalculation)+"</td>";
+                    }
+                    myTable+="</tr>"
+        }
+        myTable+="</table>"
+        result.innerHTML = myTable;
+        }
+    </script>
+
+<body>
+    
+    <center>
+        <h1>Mathematics Table</h1>
+        <input id="row" type="number" min="0" max="10" placeholder="Rows">
+        <input id="col" type="number" min="0" max="10" placeholder="Column">
+        <button id="eva" onclick="evalu()">Display</button>
+        <select name="Display" id="sign">
+            <option id="add" value="+">Addition</option>
+            <option id="sub" value="-">Substract</option>
+            <option id="multi" value="*">Multiplication</option>
+            <option id="div" value="/">Division</option>
+        </select>
+        <div id="result"></div>
+    </center>
+    
+</body>
+</html>
