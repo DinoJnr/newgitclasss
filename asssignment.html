@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="hrs" placeholder="00" >
+    <input type="text" id="mins" placeholder="00">
+    <input type="text" id="sec" placeholder="00">
+    <button onclick="myfun()">Start</button>
+    <button onclick="myset()">Reset</button>
+    <button onclick="split()">checktime</button>
+    <a id="show"></a>
+    <script>
+        var seconds;
+        var minutues;
+        var hours;
+        var split;
+         function myfun(){
+             seconds = sec.value;
+             seconds --;
+             sec.value = seconds;
+             if( seconds > 0){
+                setTimeout(myfun,1000);
+             }
+             else{
+                 minutues = mins.value
+                 if(minutues >0 ){
+                     minutues --;
+                     mins.value =minutues ;
+                     seconds = 59;
+                     sec.value = seconds;
+                     setTimeout(myfun, 1000)
+
+                 }
+                 else{
+                    hours = hrs.value;
+                 if( hours > 0){
+                     hours --;
+                     hrs.value = hours;
+                     minutues = 60;
+                     minutues --;
+                     mins.value = minutues;
+                     seconds = 59;
+                     seconds --;
+                     sec.value = seconds;
+                     setTimeout(myfun, 1000)
+                    
+                 }   
+                 }
+             }         
+            }
+            function myset(){
+                sec.value = 0001;
+                mins.value = 000;
+                hrs.value = 000;
+
+            }
+            function split(){
+                show.innerHTML += "<li>" + hrs.value + ':' + mins.value + ':' + sec.value ;
+
+            }
+        
+    </script>
+</body>
+</html>
