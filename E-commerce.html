@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Sign In/Sign Up Form</title>
+    <link rel="stylesheet" href="E-commerce.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <!-- <div id="showCustomer"></div> -->
+    <div id="stand">
+        <div class="container" id="container">
+        
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Sign Up</h1>
+                    <input id="fir" style="outline:none;" type="text" placeholder="Firstname">
+                    <input id="sec" style="outline:none;" type="text" placeholder="Lastname">
+                    <input id="ema" style="outline:none;" type="email" placeholder="Email">
+                    <input id="pass" style="outline:none;" type="password" placeholder="Password">
+                    <button onclick="signUp()">Sign Up</button>
+                    <span>Or Sign up with social platforms</span>
+                    
+                </form>
+            </div>
+        
+        <div >  
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Sign In</h1>
+                    <input id="Email" style="outline:none;" type="text" placeholder="Email">
+                    <input id="Pincode" style="outline:none ;" type="password" placeholder="Password">
+                    <button onclick="signIn()">Sign In</button>
+                    <button onclick="adminPortal()" class="Admin">Admin Portal</button>
+                    <a href="">forgot password ?</a>
+                    <span>or sign in with social platforms</span>
+                </form>
+            </div>
+            </div>
+            <div class="overlay-container">
+            <div class="overlay">
+                <div  class="overlay-panel overlay-left">
+                    <h1>Hello</h1>
+                    <button class="ghost" id="signIn"> Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello Friendship</h1>
+                    <p>Enter your information correctly and start the journey with us</p>
+                    <button class="ghost" id="signUp"> Sign Up</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: #eee ; width:100%; height: auto;" id="mainpage">
+        
+            <div class="dollyp">
+                <b class="PHITOM" >PHITOM STORE</b>
+                <p class="look">Look no further! We got everything for you. </p>
+                <p class="opop">E-mail: philipadebiyi2@gmail.com</p>
+            </div>
+            <img class="cart-bn" onclick="cartButton()" src="Img/cart.png" alt="" srcset="">
+            <div class="Gucci">
+                <b class="guccitag" >Gucci Collectiions</b>
+                <div class="card">
+                    <img class="img-body"  src="Gucci/Gucci.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Gucci Travelling Bag, Hush Model.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$1000</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Gucci/Gucci1.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Gucci Travelling Bag, Mompha Model.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$15000</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Gucci/FemaleGucci7.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Gucci Side Bag</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b  class="card-text" >$1000</b>
+                        <button  class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Gucci/FemaleGucci.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Gucci Bag LI.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$500</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Gucci/FemaleGucci2.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Gucci Bag LV.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$400</b>
+                        <button  class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Gucci/FemaleGucci3.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Gucci Bag IX.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$400</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="img-body" src="Gucci/FemaleGucci4.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Gucci Bag LIV.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b  class="card-text" class="card-text" >$300</b>
+                        <button  class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card" >
+                    <img class="img-body" src="Gucci/FemaleGucci5.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Gucci Bag LVT.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$150</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>    
+                <div class="card" >
+                    <img class="img-body" src="Gucci/FemaleGucci6.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Gucci Bag LVJ.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$100</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>
+
+                </div>
+            </div>    
+
+            <div class="Fendi">
+                <b class="fenditag">Fendi Collectiions</b>
+                <div class="card">
+                    <img class="img-body"  src="Fendi/Fendi.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Fendi Portable MOM.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$600</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body"  src="Fendi/Fendi3.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Fendi Portable Ray.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$400</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body"  src="Fendi/Fendi11.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Fendi Back Bag</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$300</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body"  src="Fendi/Fendi4.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Fendi Bag Lor.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$500</b>
+                        <button  class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Fendi/Fendi7.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Fendi Bag Boz.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b   class="card-text">$400</b>
+                        <button  class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Fendi/Fendi9.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Fendi Bag Fog.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$400</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="img-body" src="Fendi/Fendi10.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Fendi Bag Bay.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b  class="card-text" >$500</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Fendi/Fendi6.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Fendi Bag Hulk.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$400</b>
+                        <button  class="btn btn-primary">Add To Cart</button>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Fendi/Fendi2.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Fendi Bag, Roma.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$400</b>
+                        <button  class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+            </div>     
+            <div class="Versace">
+                <b class="versacetag">Versace Collectiions</b>
+                <div class="card">
+                    <img class="img-body" src="Versace/VersaceMale.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Versace Portable MOM.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b  class="card-text" >$600</b>
+                        <button  class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Versace/VersaceMale1.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Versace Portable Ray.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$400</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Versace/VersaceMale2.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Versace Back Bag</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$1000</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Versace/Versace8.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title"> Fashion Female Versace Bag Lod.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$500</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Versace/Versace3.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Versace Female Bag Boh.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$10000</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+                <div class="card">
+                    <img class="img-body"  src="Versace/Versace3.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Versace Female Bag Fok.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$1500</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <img class="img-body" src="Versace/PinkVerscae.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Pink Fashion Female Versace Bag.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$500</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Versace/Versace.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Versace Bag loy.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$400</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>    
+                <div class="card">
+                    <img class="img-body" src="Versace/Versace6.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Versace Bag, Roa.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$400</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+            </div>    
+            <div class="Loius">
+                <b class="loiustag">Louis Vuitton Collectiions</b>
+                <div class="card" >
+                    <img class="img-body" src="Vitton/LoiusVitton1.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Louis Vuitton Travelling Bag, carl.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$600</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+                <div class="card" >
+                    <img class="img-body" src="Vitton/LoiusVitton2.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Louis Vuitton fashion Bag.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$400</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Vitton/LoiusVitton4.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Men Louis Vuitton Office Bag</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$1000</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Vitton/LoiusVitton.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title"> Pink Louis Vuitton Bag.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$500</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+                <div class="card" >
+                    <img class="img-body" src="Vitton/LoiusVitton3.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Louis Vuitton Bag Boz.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$10000</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+                <div class="card" >
+                    <img class="img-body" src="Vitton/LoiusVitton5.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Louis Vuitton Bag Kaj.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$1500</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+
+                <div class="card">
+                    <img class="img-body"  src="Vitton/LoiusVitton11.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Unisex Louis Vuitton Bag.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price: </b> -->
+                        <b class="card-text" >$500</b>
+                        <button  class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+                <div class="card">
+                    <img class="img-body" src="Vitton/LoiusVitton9.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Louis Vuitton Bag,Agie.</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$400</b>
+                        <button  class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>    
+                <div class="card">
+                    <img class="img-body"  src="Vitton/LoiusVitton10.jfif" alt="">
+                    <div class="card-body">
+                        <b class="card-title">Female Fashion Louis Vuitton Bag, Tay .</b>
+                        <!-- <b style="position: absolute; top:360px; left:60px;">Price:</b> -->
+                        <b class="card-text" >$400</b>
+                        <button class="btn btn-primary">Add To Cart</button>
+                    </div>    
+                </div>
+    </div>    
+            <div class="nark"></div>
+           
+    </div>
+    <div class="artpage" id="caartpage">
+        <div class="Lpage">
+            <b class="welcart">Welcome To The Cart Page</b>
+            <img class="cartback" role="button" onclick="cartBack()" src="Img/images.jfif" alt="">
+        </div>
+        <div class="caaart-products">
+        <table>
+            <thead>
+                <tr>
+                    <th class="uk-table-shrink"></th>
+                    <th class="uk-table-small sly"><h3 style="color:rgb(0, 132, 255);position: absolute;font-size: 10px;" >ITEM</h3></th>
+                    <th class="uk-table-small"></th>
+                    <th class="uk-width-small sty"><h3 style="position:absolute;top: 0px;left:130px; color: rgb(0, 132, 255);font-size: 10px;">PRICE</h3></th>
+                    <th class="uk-table-shrinks uk-text-small sty"> <h3 style="position: absolute; left:207px;top:0px;color:rgb(0, 132, 255);font-size: 10px;">QUANTITY</h3> </th>
+                    <th class="uk-table-shrinks uk-text-small sty"> <h3 style="position: absolute; left:280px; top:0px; color: rgb(0, 132, 255);font-size: 10px;">TOTAL</h3> </th>
+                </tr>
+            </thead>
+
+                    <!-- <style style=""></style> -->
+            <tbody>
+                <!-- <tr>
+                    <td> <input class="uk-checkbox" type="checkbox"> </td>
+                    <td> <img class="uk-preserve-width uk-border-circle" src="Img/Back.png" alt=""></td>
+                    <td class="uk-table-link">
+                        <h3 class="item-name">Strawberry Cake</h3>
+                    </td>
+                    <td class="uk-text-truncate item-price"><h3>$100</h3></td>
+                    <td> <input type="number" class="num" value="1"></td>
+                    <td class="uk-text-truncate total-price"><h3>$100</h3></td>
+                    <td><button class="uk-button uk-button-danger">Remove</button></td>
+                </tr> -->
+            </tbody>
+            <tr>
+                <td> <input type="checkbox" class="uk-checkbox" ></td>
+                <td><img src="" alt="" class="uk-preserve-width uk-border-circle" width="40" srcset=""></td>
+                <td class="uk-table-link">
+                    <h3 class="item-name"> <strong style="font-size:20px;color:rgb(0, 132, 255); position: relative; top: 140px;  ">Grand-Total =</strong> </h3>
+                </td>
+                <td class="uk-text-truncate"><h3></h3></td> 
+                <td class="uk-text-truncate"><h3></h3></td>
+                <td class="uk-text-truncate grand-total"><h3><strong >$0</strong></h3></td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    <script src="E-commerce.js"></script>
+    <div  class="fung" id="fun">
+        <div>
+            <div class="adminlogin" >
+                <b style="color: black; font-size: 30px; position: absolute; left: 120px; font-family: 'Times New Roman', Times, serif; top: 70px;">ADMIN LOGIN</b>
+                <form action="#">               
+                     <input id="passcod" style="outline:none ;width: 70%; height: 50px; background-color: #eee; padding: 12px 15px; margin: 18px; border: none; position: absolute;
+                     top: 150px; left: 50px;" type="text" placeholder="passcode">
+                    <input id="placecard" style="outline:none;width: 70%; height: 50px; background-color: #eee; padding: 12px 15px; margin: 18px; border: none;position: absolute;
+                    top: 220px; left: 50px;" type="password" placeholder="Password">
+                    <button onclick="adminLogin()" style="position: absolute; top:320px; left:140px;" >Login In</button>
+                </form>
+    
+            </div>
+        </div>
+    </div>
+
+    <div id="ballon" class="dada">
+        <div  class="box-flex">
+            <b class="dis">Display All Customers</b>
+            <p class="here">Click Here To Display All Customers Details</p>
+            <button onclick="displayCustomer()" class="but">Display Customers</button>
+        </div>
+        <div class="box-flex1">
+            <b class="Add">Add Products</b>
+            <p class="to">Click Here To Add Products</p>
+            <button onclick="addProduct()" class="prod">Add Products</button>
+        </div>
+    </div>
+
+    <div class="zaza" id="wawa">
+        <div class="koin">
+            <p class="tcs">Name Of Products</p>
+            <input class="of" placeholder="Product Name" type="text">
+            <input class="promo" placeholder="Price Of Product" type="number">
+            <button class="kola">Add</button>
+        </div>
+    </div>
+    <div class="sako" id="smions">
+        <div class="jaja">
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
